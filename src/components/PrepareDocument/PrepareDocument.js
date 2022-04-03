@@ -329,7 +329,7 @@ const PrepareDocument = () => {
                   <Button
                     onClick={() => {
                       if (filePicker) {
-                        filePicker.current.click();
+                        //filePicker.current.click();
                       }
                     }}
                     accessibilityLabel="upload a document"

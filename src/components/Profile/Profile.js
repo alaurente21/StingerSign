@@ -27,7 +27,7 @@ const ProfilePage = () => {
     <Box display="flex" direction="row" paddingY={2} color={'lightGray'}>
       <Column span={9}>
         <Box padding={3}>
-          <Link to="/" className='profileLink'><Heading size="lg">PDFTron Sign App</Heading></Link>
+          <Link to="/" className='profileLink'><Heading size="lg">StingerSign</Heading></Link>
         </Box>
       </Column>
       <Column span={3}>
