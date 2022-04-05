@@ -44,31 +44,31 @@ const SignUp = () => {
         </Box>
         </div>
         <Box padding={2}>
+          <h1 style={{color:'white'}}>Name</h1>
           <TextField
             id="displayName"
             onChange={event => setDisplayName(event.value)}
             placeholder="Enter your name"
-            label="Name"
             value={displayName}
             type="text"
           />
         </Box>
         <Box padding={2}>
+          <h1 style={{color:'white'}}>Email</h1>
           <TextField
             id="email"
             onChange={event => setEmail(event.value)}
             placeholder="Enter your email"
-            label="Email"
             value={email}
             type="email"
           />
         </Box>
         <Box padding={2}>
+          <h1 style={{color:'white'}}>Password</h1>
           <TextField
             id="password"
             onChange={event => setPassword(event.value)}
             placeholder="Enter your password"
-            label="Password"
             value={password}
             type="password"
           />
