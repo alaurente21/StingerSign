@@ -33,7 +33,7 @@ const SignIn = () => {
           <Box padding={3}>
             {error !== null && <Toast text={error} />}
             <h2>Sign In</h2>
-            <h1>Sign in to view your document signatures!</h1>
+            <h1>Sign in to see your StingerSign signatures</h1>
           </Box>
           </div>
           <Box padding={2}>
