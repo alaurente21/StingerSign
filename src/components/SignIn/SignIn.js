@@ -11,6 +11,7 @@ import {
   Heading,
 } from 'gestalt';
 import 'gestalt/dist/gestalt.css';
+import { Column } from 'gestalt';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -25,13 +26,16 @@ const SignIn = () => {
   };
 
   return (
-    <div>
+    <div class="sign-in-main-component">
       <Box padding={3}>
         <Container>
+        <div class="sign-in-top-container">
           <Box padding={3}>
             {error !== null && <Toast text={error} />}
-            <Heading size="md">Sign in</Heading>
+            <h2>Sign In</h2>
+            <h1>Sign in to view your document signatures!</h1>
           </Box>
+          </div>
           <Box padding={2}>
             <TextField
               id="email"
@@ -63,25 +67,24 @@ const SignIn = () => {
               inline
             />
           </Box>
-
           <Box padding={2}>
-            <Text>or</Text>
+            <Text weight="bold" color="white">or</Text>
           </Box>
           <Box padding={2}>
-            <Button onClick={signInWithGoogle} text="Sign in with Google" color="red" inline />
+            <Button onClick={signInWithGoogle} text="Sign in with Google" color="blue" inline />
           </Box>
           <Box padding={2}>
-            <Text>Don't have an account?</Text>
+            <Text weight="bold" color="white">Don't have an account?</Text>
           </Box>
           <Box padding={2}>
-            <Link to="signUp" className="text-blue-500 hover:text-blue-600">
+            <Link to="signUp" color="white" className="text-white-500 hover:text-red-600">
               Sign up here
             </Link>
           </Box>
           <Box padding={2}>
             <Link
               to="passwordReset"
-              className="text-blue-500 hover:text-blue-600"
+              className="text-blue-500 hover:text-gold-600"
             >
               Forgot Password?
             </Link>

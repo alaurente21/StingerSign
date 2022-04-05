@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*-----------------------------------*/
+/* Styling Sign-In and Sign Up Pages */
+/*-----------------------------------*/
+
+.sign-in-main-component, .sign-up-main-component{
+  background-color: #004e38;
+  padding: 10px;
+}
+
+.text-white-500, .text-blue-500{
+  color:white;
+}
+
+.text-white-500:hover, .text-blue-500:hover{
+  color: #C4b47c;
+}
+
+.sign-in-top-container h2{
+  font-size: 33px;
+  line-height: 10px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sign-in-top-container h1{
+  color: #C4b47c;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sign-up-top-container h2{
+  font-size: 33px;
+  line-height: 10px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sign-up-top-container, h1{
+  font-size: 23px;
+  line-height: 25px;
+  color: #C4b47c;
+  font-family: 'Ubuntu', sans-serif;
+}

@@ -33,13 +33,16 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div class="sign-up-main-component">
     <Box padding={3}>
       <Container>
+        <div class="sign-up-top-container">
         <Box padding={3}>
           {error !== null && <Toast text={error} />}
-          <Heading size="md">Sign up</Heading>
+          <h2>Sign Up</h2>
+          <h1> Sign up for free to create your personal digital signature!</h1>
         </Box>
+        </div>
         <Box padding={2}>
           <TextField
             id="displayName"
@@ -83,18 +86,18 @@ const SignUp = () => {
         </Box>
 
         <Box padding={2}>
-          <Text>or</Text>
+          <Text color="white" weight="bold">or</Text>
         </Box>
         <Box padding={2}>
-          <Button onClick={signInWithGoogle} text="Sign in with Google" color="red" inline />
+          <Button onClick={signInWithGoogle} text="Sign in with Google" color="blue" inline />
         </Box>
         <Box padding={2}>
-          <Text>Already have an account?</Text>
+          <Text color="white" weight="bold">Already have an account?</Text>
         </Box>
         <Box padding={2}>
         <Link to="/" className="text-blue-500 hover:text-blue-600">
             Sign in here
-          </Link>
+        </Link>
         </Box>
       </Container>
     </Box>
