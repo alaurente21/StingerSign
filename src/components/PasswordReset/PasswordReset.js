@@ -25,18 +25,21 @@ const PasswordReset = () => {
   };
 
   return (
-    <div>
+    <div class="password-reset-component">
       <Box padding={3}>
         <Container>
-          <Box padding={3}>
-            <Heading size="md">Reset your password</Heading>
-          </Box>
+          <div class="password-reset-top-component">
+            <Box padding={3}>
+            <h2 style={{color:'white'}}>Reset your password</h2>
+            
+            </Box>
+          </div>
           {error !== null && <Toast text={error} />}
           {emailHasBeenSent !== false && (
             <Toast text={'An email with reset instructions is on the way'} />
           )}
           <Box padding={2}>
-            <h1 style={{color:'Black'}}>Email</h1>
+            <h1 style={{color:'White'}}>Email</h1>
             <TextField
               id="email"
               onChange={event => setEmail(event.value)}
@@ -57,7 +60,7 @@ const PasswordReset = () => {
             />
           </Box>
           <Box padding={2}>
-            <Link to="/" className="text-004e38-500 hover:text-blue-600">
+            <Link to="/" className="text-white-500 hover:text-blue-600">
               Back to the Sign in
             </Link>
           </Box>
