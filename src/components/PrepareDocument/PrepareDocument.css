@@ -1,3 +1,6 @@
 .webviewer {
     height: calc(100vh - 83px);
 }
+body {
+     background-color: rgba(3, 59, 3, 0.903);
+}
