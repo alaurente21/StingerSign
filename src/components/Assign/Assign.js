@@ -44,14 +44,14 @@ const Assign = () => {
       <Box padding={3}>
         <Container>
           <Box padding={3}>
-            <Heading size="md">Who needs to sign?</Heading>
+            <Heading size="md" color='white'>Who needs to sign?</Heading>
           </Box>
           <Box padding={2}>
             <TextField
               id="displayName"
               onChange={event => setDisplayName(event.value)}
               placeholder="Enter recipient's name"
-              label="Name"
+              //label="Name"
               value={displayName}
               type="text"
             />
@@ -61,7 +61,7 @@ const Assign = () => {
               id="email"
               onChange={event => setEmail(event.value)}
               placeholder="Enter recipient's email"
-              label="Email"
+              //label="Email"
               value={email}
               type="email"
             />
@@ -81,10 +81,10 @@ const Assign = () => {
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>
-                    <Text weight="bold">Name</Text>
+                    <Text weight="bold" color="white">Name</Text>
                   </Table.HeaderCell>
                   <Table.HeaderCell>
-                    <Text weight="bold">Email</Text>
+                    <Text weight="bold" color="white">Email</Text>
                   </Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
