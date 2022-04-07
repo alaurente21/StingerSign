@@ -40,7 +40,7 @@ const SignUp = () => {
         <Box padding={3}>
           {error !== null && <Toast text={error} />}
           <h2>Sign Up</h2>
-          <h1> Sign up for free to create your personal digital signature!</h1>
+          <h1> Sign up for free to create your StingerSign signature!</h1>
         </Box>
         </div>
         <Box padding={2}>

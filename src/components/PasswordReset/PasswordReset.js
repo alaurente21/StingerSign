@@ -33,14 +33,14 @@ const PasswordReset = () => {
           </Box>
           {error !== null && <Toast text={error} />}
           {emailHasBeenSent !== false && (
-            <Toast text={'An email with reset info is on the way'} />
+            <Toast text={'An email with reset instructions is on the way'} />
           )}
           <Box padding={2}>
+            <h1 style={{color:'Black'}}>Email</h1>
             <TextField
               id="email"
               onChange={event => setEmail(event.value)}
               placeholder="Enter your email"
-              label="Email"
               value={email}
               type="email"
             />
@@ -57,7 +57,7 @@ const PasswordReset = () => {
             />
           </Box>
           <Box padding={2}>
-            <Link to="/" className="text-blue-500 hover:text-blue-600">
+            <Link to="/" className="text-004e38-500 hover:text-blue-600">
               Back to the Sign in
             </Link>
           </Box>
