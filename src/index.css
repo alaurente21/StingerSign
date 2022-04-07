@@ -54,3 +54,27 @@ code {
   color: #C4b47c;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.welcome-main-component{
+  background-color: #004e38;
+  color: black;
+  padding-bottom: 10%;
+}
+
+.welcome-container h2{
+  font-size: 28px;
+  line-height: 10px;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  border-bottom: 3px black solid;
+  border-radius: 5px;
+  padding-bottom: 8px;
+}
+
+.sign-documents-container, .prepare-documents-container, .review-documents-container{
+  margin-bottom: 8%;
+  padding-left: 25px;
+  padding-bottom: 70px;
+  border: 2px black solid;
+  background-color: white;
+}

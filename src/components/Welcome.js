@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
-import Profile from './Profile/Profile';
-import { navigate } from '@reach/router';
-import { useDispatch } from 'react-redux';
-import SignList from './Lists/SignList';
-import SignedList from './Lists/SignedList';
-import { resetDocToView } from './ViewDocument/ViewDocumentSlice';
-import { resetDocToSign } from './SignDocument/SignDocumentSlice';
-import { Box, Button, Container, Heading } from 'gestalt';
-import 'gestalt/dist/gestalt.css';
-
+import React, { useEffect } from "react";
+import Profile from "./Profile/Profile";
+import { navigate } from "@reach/router";
+import { useDispatch } from "react-redux";
+import SignList from "./Lists/SignList";
+import SignedList from "./Lists/SignedList";
+import { resetDocToView } from "./ViewDocument/ViewDocumentSlice";
+import { resetDocToSign } from "./SignDocument/SignDocumentSlice";
+import { Box, Button, Container, Heading } from "gestalt";
+import "gestalt/dist/gestalt.css";
 
 const ProfilePage = () => {
   const dispatch = useDispatch();
@@ -19,34 +18,42 @@ const ProfilePage = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div class="welcome-main-component">
       <Profile />
       <Container>
-        <Box padding={3}>
-          <Heading size="md">{`Sign Documents`}</Heading>
-        </Box>
-        <Box padding={3}>
-          <SignList />
-        </Box>
-        <Box padding={3}>
-          <Heading size="md">{`Prepare Document`}</Heading>
-        </Box>
-        <Box padding={2}>
-          <Button
-            onClick={event => {
-              navigate(`/assignUsers`);
-            }}
-            text="Prepare Document for Signing"
-            color="blue"
-            inline
-          />
-        </Box>
-        <Box padding={3}>
-          <Heading size="md">{`Review Signed Documents`}</Heading>
-        </Box>
-        <Box padding={3}>
-          <SignedList />
-        </Box>
+        <div class="welcome-container">
+          <div class="sign-documents-container">
+            <Box padding={3}>
+              <h2>{`Sign Documents`}</h2>
+            </Box>
+            <Box marginStart={5} marginTop={-5}>
+              <SignList />
+            </Box>
+          </div>
+          <div class="prepare-documents-container">
+            <Box padding={3}>
+              <h2>{`Prepare Document`}</h2>
+            </Box>
+            <Box marginStart={3} marginTop={-4}>
+              <Button
+                onClick={(event) => {
+                  navigate(`/assignUsers`);
+                }}
+                text="Prepare Document for Signing"
+                color="blue"
+                inline
+              />
+            </Box>
+          </div>
+          <div class="review-documents-container">
+            <Box padding={3}>
+              <h2>{`Review Signed Documents`}</h2>
+            </Box>
+            <Box marginStart={5} marginTop={-5}>
+              <SignedList />
+            </Box>
+          </div>
+        </div>
       </Container>
     </div>
   );
