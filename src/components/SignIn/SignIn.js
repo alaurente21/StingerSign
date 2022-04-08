@@ -20,8 +20,8 @@ const SignIn = () => {
 
   const signInWithEmailAndPasswordHandler = (event, email, password) => {
     auth.signInWithEmailAndPassword(email, password).catch(error => {
-      setError("Error signing in with password and email!");
-      console.error("Error signing in with password and email", error);
+      setError("ERROR: Incorrect password or email!");
+      console.error("ERROR: Incorrect password or email!", error);
     });
   };
 
@@ -31,7 +31,7 @@ const SignIn = () => {
         <Container>
         <div class="sign-in-top-container">
           <Box padding={3}>
-            {error !== null && <Toast text={error} />}
+            {error !== null && <Toast color="red" text={error} />}
             <h2>Sign In</h2>
             <h1>Sign in to see your StingerSign signatures</h1>
           </Box>

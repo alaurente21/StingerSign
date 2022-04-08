@@ -40,7 +40,7 @@ const SignUp = () => {
         <Box padding={3}>
           {error !== null && <Toast text={error} />}
           <h2>Sign Up</h2>
-          <h1> Sign up for free to create your StingerSign signature!</h1>
+          <h1> Sign up to create your StingerSign signature!</h1>
         </Box>
         </div>
         <Box padding={2}>
@@ -85,12 +85,6 @@ const SignUp = () => {
           />
         </Box>
 
-        <Box padding={2}>
-          <Text color="white" weight="bold">or</Text>
-        </Box>
-        <Box padding={2}>
-          <Button onClick={signInWithGoogle} text="Sign in with Google" color="blue" inline />
-        </Box>
         <Box padding={2}>
           <Text color="white" weight="bold">Already have an account?</Text>
         </Box>

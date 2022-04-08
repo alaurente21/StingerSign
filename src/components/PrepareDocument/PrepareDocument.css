@@ -1,6 +1,10 @@
 .webviewer {
     height: calc(100vh - 83px);
 }
+.white-box {
+    background-color: white;
+    color: black;
+}
 body {
-     background-color: rgba(3, 59, 3, 0.903);
+     background-color: rgba(0, 78, 56, 1);
 }

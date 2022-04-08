@@ -55,7 +55,7 @@ const PasswordReset = () => {
                 navigate('/');
               }}
               text="Reset"
-              color="blue"
+              color="red"
               inline
             />
           </Box>

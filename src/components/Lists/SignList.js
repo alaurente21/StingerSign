@@ -70,7 +70,7 @@ const SignList = () => {
               </Table.Body>
             </Table>
           ) : (
-            'You do not have any documents to sign'
+            'You do not have any StingerDocs to sign'
           )}
         </div>
       )}

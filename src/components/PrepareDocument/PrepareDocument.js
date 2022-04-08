@@ -317,13 +317,13 @@ const PrepareDocument = () => {
       <Box display="flex" direction="row" flex="grow">
         <Column span={2}>
           <Box padding={3}>
-            <Heading size="md">Prepare Document</Heading>
+            <Heading size="md" color="white">Prepare Document</Heading>
           </Box>
           <Box padding={3}>
             <Row gap={1}>
               <Stack>
                 <Box padding={2}>
-                  <Text>{'Step 1'}</Text>
+                  <Text color="white">{'Step 1'}</Text>
                 </Box>
                 <Box padding={2}>
                   <Button
@@ -342,16 +342,16 @@ const PrepareDocument = () => {
             <Row>
               <Stack>
                 <Box padding={2}>
-                  <Text>{'Step 2'}</Text>
+                  <Text color="white">{'Step 2'}</Text>
                 </Box>
                 <Box padding={2}>
+                  <h1 color="white">Adding signature for</h1>
                   <SelectList
                     id="assigningFor"
                     name="assign"
                     onChange={({ value }) => setAssignee(value)}
                     options={assigneesValues}
                     placeholder="Select recipient"
-                    label="Adding signature for"
                     value={assignee}
                   />
                 </Box>
@@ -402,7 +402,7 @@ const PrepareDocument = () => {
             <Row gap={1}>
               <Stack>
                 <Box padding={2}>
-                  <Text>{'Step 3'}</Text>
+                  <Text color="white">{'Step 3'}</Text>
                 </Box>
                 <Box padding={2}>
                   <Button
@@ -417,7 +417,7 @@ const PrepareDocument = () => {
           </Box>
         </Column>
         <Column span={10}>
-          <div className="webviewer" ref={viewer}></div>
+          <div size="large" class="white-box" align="middle" >StingerDoc</div>
         </Column>
       </Box>
       <input type="file" ref={filePicker} style={{ display: 'none' }} />
@@ -426,3 +426,5 @@ const PrepareDocument = () => {
 };
 
 export default PrepareDocument;
+
+//<div className="webviewer" ref={viewer}></div>

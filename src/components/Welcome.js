@@ -24,7 +24,7 @@ const ProfilePage = () => {
         <div class="welcome-container">
           <div class="sign-documents-container">
             <Box padding={3}>
-              <h2>{`Sign Documents`}</h2>
+              <h2 color="004e38">{`Sign StingerDoc`}</h2>
             </Box>
             <Box marginStart={5} marginTop={-5}>
               <SignList />
@@ -32,22 +32,22 @@ const ProfilePage = () => {
           </div>
           <div class="prepare-documents-container">
             <Box padding={3}>
-              <h2>{`Prepare Document`}</h2>
+              <h2 color="004e38">{`Prepare StingerDoc`}</h2>
             </Box>
             <Box marginStart={3} marginTop={-4}>
               <Button
                 onClick={(event) => {
                   navigate(`/assignUsers`);
                 }}
-                text="Prepare Document for Signing"
-                color="blue"
+                text="Prepare StingerDoc for Signing"
+                color="black"
                 inline
               />
             </Box>
           </div>
           <div class="review-documents-container">
             <Box padding={3}>
-              <h2>{`Review Signed Documents`}</h2>
+              <h2>{`Review Signed StingerDocs`}</h2>
             </Box>
             <Box marginStart={5} marginTop={-5}>
               <SignedList />
