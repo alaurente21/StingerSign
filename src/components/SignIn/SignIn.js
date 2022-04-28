@@ -68,9 +68,6 @@ const SignIn = () => {
             />
           </Box>
           <Box padding={2}>
-            <Text weight="bold" color="white">or</Text>
-          </Box>
-          <Box padding={2}>
             <Button onClick={signInWithGoogle} text="Sign in with Google" color="red" inline />
           </Box>
           <Box padding={2}>

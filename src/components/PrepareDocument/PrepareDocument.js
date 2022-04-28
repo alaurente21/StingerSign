@@ -329,7 +329,7 @@ const PrepareDocument = () => {
                   <Button
                     onClick={() => {
                       if (filePicker) {
-                        //filePicker.current.click();
+                        filePicker.current.click();
                       }
                     }}
                     accessibilityLabel="upload a document"
@@ -417,7 +417,7 @@ const PrepareDocument = () => {
           </Box>
         </Column>
         <Column span={10}>
-          <div size="large" class="white-box" align="middle" >StingerDoc</div>
+          <div className="webviewer" ref={viewer}></div>
         </Column>
       </Box>
       <input type="file" ref={filePicker} style={{ display: 'none' }} />
@@ -427,4 +427,3 @@ const PrepareDocument = () => {
 
 export default PrepareDocument;
 
-//<div className="webviewer" ref={viewer}></div>
