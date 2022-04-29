@@ -63,12 +63,12 @@ const SignIn = () => {
                 navigate('/');
               }}
               text="Sign in"
-              color="blue"
+              color="black"
               inline
             />
           </Box>
           <Box padding={2}>
-            <Button onClick={signInWithGoogle} text="Sign in with Google" color="red" inline />
+            <Button onClick={signInWithGoogle} text="Sign in with Google" color="green" inline />
           </Box>
           <Box padding={2}>
             <Text weight="bold" color="white">Don't have an account?</Text>

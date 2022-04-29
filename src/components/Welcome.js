@@ -21,16 +21,7 @@ const ProfilePage = () => {
     <div class="welcome-main-component">
       <Profile />
       <Container>
-        <div class="welcome-container">
-          <div class="sign-documents-container">
-            <Box padding={3}>
-              <h2 color="004e38">{`Sign StingerDoc`}</h2>
-            </Box>
-            <Box marginStart={5} marginTop={-5}>
-              <SignList />
-            </Box>
-          </div>
-          <div class="prepare-documents-container">
+        <div class="prepare-documents-container">
             <Box padding={3}>
               <h2 color="004e38">{`Prepare StingerDoc`}</h2>
             </Box>
@@ -44,15 +35,17 @@ const ProfilePage = () => {
                 inline
               />
             </Box>
-          </div>
-          <div class="review-documents-container">
+          </div>  
+        <div class="welcome-container">
+          <div class="sign-documents-container">
             <Box padding={3}>
-              <h2>{`Review Signed StingerDocs`}</h2>
+              <h2 color="004e38">{`Sign StingerDoc`}</h2>
             </Box>
             <Box marginStart={5} marginTop={-5}>
-              <SignedList />
+              <SignList />
             </Box>
           </div>
+
         </div>
       </Container>
     </div>

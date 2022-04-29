@@ -111,27 +111,10 @@ const SignDocument = () => {
       <Box display="flex" direction="row" flex="grow">
         <Column span={2}>
           <Box padding={3}>
-            <Heading size="md">Sign Document</Heading>
           </Box>
           <Box padding={3}>
             <Row gap={1}>
               <Stack>
-                <Box padding={2}>
-                  <Button
-                    onClick={nextField}
-                    accessibilityLabel="next field"
-                    text="Next field"
-                    iconEnd="arrow-forward"
-                  />
-                </Box>
-                <Box padding={2}>
-                  <Button
-                    onClick={prevField}
-                    accessibilityLabel="Previous field"
-                    text="Previous field"
-                    iconEnd="arrow-back"
-                  />
-                </Box>
                 <Box padding={2}>
                   <Button
                     onClick={completeSigning}
@@ -153,3 +136,19 @@ const SignDocument = () => {
 };
 
 export default SignDocument;
+
+
+//                   <Button
+//onClick={nextField}
+//accessibilityLabel="next field"
+//text="Next field"
+//iconEnd="arrow-forward"/> 
+
+//*
+
+//<Button
+//onClick={prevField}
+//accessibilityLabel="Previous field"
+//text="Previous field"
+//iconEnd="arrow-back"/>
+//
