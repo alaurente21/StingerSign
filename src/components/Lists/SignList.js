@@ -61,7 +61,6 @@ const SignList = () => {
                           navigate(`/signDocument`);
                         }}
                         text="Sign"
-                        color="blue"
                         inline
                       />
                     </Table.Cell>

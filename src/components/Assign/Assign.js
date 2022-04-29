@@ -72,7 +72,6 @@ const Assign = () => {
                 addUser(displayName, email);
               }}
               text="Add user"
-              color="blue"
               inline
             />
           </Box>
@@ -103,7 +102,7 @@ const Assign = () => {
             </Table>
           </Box>
           <Box padding={2}>
-            <Button onClick={prepare} text="Continue" color="blue" inline />
+            <Button onClick={prepare} text="Continue" inline />
           </Box>
           <Box
             fit
