@@ -22,10 +22,15 @@ export const firestore = firebase.firestore();
 export const storage = firebase.storage();
 
 const provider = new firebase.auth.GoogleAuthProvider();
+const providerGit = new firebase.auth.GithubAuthProvider();
 
 export const signInWithGoogle = () => {
   auth.signInWithPopup(provider);
 };
+
+export const signInWithGithub = () => {
+  auth.signInWithRedirect(providerGit);
+}
 
 export const generateUserDocument = async (user, additionalData) => {
   if (!user) return;

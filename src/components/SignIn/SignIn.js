@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, navigate } from '@reach/router';
-import { auth, signInWithGoogle } from '../../firebase/firebase';
+import { auth, signInWithGoogle , signInWithGithub } from '../../firebase/firebase';
 import {
   Box,
   Button,
@@ -63,12 +63,15 @@ const SignIn = () => {
                 navigate('/');
               }}
               text="Sign in"
-              color="black"
+              color='green'
               inline
             />
           </Box>
           <Box padding={2}>
-            <Button onClick={signInWithGoogle} text="Sign in with Google" color="green" inline />
+            <Button  onClick={signInWithGoogle} color="blue" text="Sign in with Google"  inline />
+          </Box>
+          <Box padding={2}>
+            <Button  onClick={signInWithGithub} color="white" text="Sign in with Github" inline />
           </Box>
           <Box padding={2}>
             <Text weight="bold" color="white">Don't have an account?</Text>
