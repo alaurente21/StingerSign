@@ -21,7 +21,7 @@ import './Profile.css';
 const ProfilePage = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
-  const { displayName, photoURL, email } = user;
+  const { displayName, email } = user;
 
   return (
     <Box display="flex" direction="row" paddingY={2} color={'lightGray'}>
@@ -34,7 +34,6 @@ const ProfilePage = () => {
         <Box padding={1}>
           <Row>
             <Box padding={1}>
-              <Avatar name={displayName} size="md" src={photoURL} />
             </Box>
             <Stack>
               <Text weight="bold">{displayName}</Text>
